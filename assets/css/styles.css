@@ -1,0 +1,376 @@
+/* 
+.container {
+    max-width: 100%;
+}
+.btn-custom {
+    width: 100%;
+    margin-bottom: 10px;
+} */
+
+body {
+    background-color: #6c757d !important;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+label {
+    font-weight: bold !important;
+}
+
+table {
+    border-collapse: collapse !important;
+    width: max-content !important;
+}
+
+th,
+td{
+    white-space: nowrap; 
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 5px 10px !important;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+table.dataTable thead th{
+    border: 1px solid black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 2rem;
+}
+
+/* Form control input  */
+.form-control {
+    font-size: 1.2rem !important;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(216, 215, 215);
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #c6c6c6;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c6c6c6;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+footer .d-flex {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    position: relative;
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.event {
+    background-color: #28a745;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.not-paid {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.btn-delete i {
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.loading-overlay .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* Daily page */
+
+.daily-main-header {
+    background-color: black;
+}
+
+/* Khata Section CSS */
+#khataSection .btn {
+    Padding: 2px .75rem !important;
+    font-size: 14px !important;
+}
+
+#khataSection {
+    /* background-color: white; */
+    padding: 20px;
+}
+
+#khataSection #khataTable_filter label{
+    color: black;
+}
+
+#khataSection #khataTable {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#khataSection #khataTable thead {
+    background-color: #4f4f4f;
+}
+
+#khataSection #khataTable thead tr th {
+    color: white;
+    font-size: 16px;
+}
+
+
+#khataSection #khataTable tbody tr td {
+    font-weight: bold;
+    color: black;
+}
+
+#khataTable th:nth-child(1),
+#khataTable td.serial-number {
+    width: 1% !important;
+    /* Adjust width as needed */
+    text-align: center;
+    /* Center align text (optional) */
+}
+
+/* Daily repayment page css */
+
+#repaymentForm .form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#repaymentForm .form-container label,
+#repaymentForm .form-group label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: black;
+}
+
+#repaymentForm .repayment-patch {
+    display: flex;
+    align-items: center;
+}
+
+#repaymentForm .repayment-amount-patch {
+    padding: 1rem;
+    background-color: rgb(230, 106, 5);
+    max-width: 400px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.repayment-collection {
+    justify-content: space-between;
+}
+
+.repayment-collection .total-repayment {
+    background: green;
+    color: white;
+    padding: 20px;
+    height: fit-content;
+    margin-top: 5rem;
+}
+
+.action-width {
+    width: 30% !important;
+}
+
+.serial-number {
+    width: 80px !important;
+}
+
+.repayment-list table td,
+.repayment-list table th{
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+.repayment-list table td button.btn{
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+
+/*repayment page 
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.form-container > div {
+    width: 48%;
+}
+.repayment-list {
+    width: 100%;
+    max-width: 800px;
+}
+.total-repayment {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.delete-btn {
+    cursor: pointer;
+    color: red;
+}
+    */
+
+    .datepicker { z-index: 1050 !important; } /* Ensure the datepicker is on top */
+    .form-row-custom { margin-bottom: 1rem; }
+    .form-group-custom { margin-bottom: 0; }
+    .btn-custom { margin: 0 5px; }
+    .card-body-custom { display: flex; justify-content: space-between; align-items: center; }
+    .form-group .form-control { display: inline-block; }
+    .card { margin-bottom: 1rem; }
+    .table-container { overflow-x: auto; }
+    h4.card-title.mb-0 {
+font-size: small;
+}
+.btn-container {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Align items vertically centered */
+        gap: 5px; /* Space between buttons */
+    }
+    .btn-icon {
+        width: 40px; /* Set width */
+        height: 40px; /* Set height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 50%; /* Optional: makes the button round */
+        font-size: 20px; /* Adjust icon size */
+        line-height: 1; /* Ensure icon is vertically centered */
+    }
+    .btn-icon i {
+        margin: 0;
+    }
+
+
+    .daily-bet-repayment button.btn{
+       padding-top: 2px;
+       padding-bottom: 0px;
+       font-size: 14px;
+    }
+
+    .daily-bet-repayment td{
+        padding: 2px .75rem 2px .75rem;
+    }
+
+    .daily-bet-repayment th{
+        padding: 4px .75rem 4px .75rem;
+    }
+    .total-collection-box {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .total-collection-item {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .total-collection-item label {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    
+    .total-collection-item span {
+        font-size: 18px;
+        color: #333;
+    }
+    .totals-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .total-item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .total-item h5 {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .total-item p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
