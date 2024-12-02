@@ -1,0 +1,18 @@
+{
+    "name": "anshu/finance",
+    "description": "Finance Managementg System",
+    "autoload": {
+        "psr-4": {
+            "Anshu\\Finance\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anshu Sharma",
+            "email": "anshsharma9761@gmail.com"
+        }
+    ],
+    "require": {
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
